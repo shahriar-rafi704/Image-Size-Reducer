@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('image1.png');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #77bfe9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+button#choose-photo-button {
+    padding: 10px 20px;
+    background-color: #fcfcfc;
+    color: rgb(0, 0, 0);
+    font-weight:bolder;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#choose-photo-button:hover {
+    background-color: #00b386;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.image-container {
+    display: flex;
+    margin: 20px 0;
+}
+
+.image-preview {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; 
+}
+
+.image-preview h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 30%; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px; 
+}
+
+#original-image-container {
+    order: 1; 
+}
+
+#preview-image-container {
+    order: 2; 
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column; 
+    }
+    
+    #original-image-container,
+    #preview-image-container {
+        order: initial; 
+    }
+}
+
+.resize-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+}
+
+button#preview-button {
+    padding: 10px 20px;
+    background-color: #eccece;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#preview-button:hover {
+    background-color:#069b87;
+}
+
+a#download-button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight:bolder;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Size Reducer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reduce Your Image Size</h1>
+        <button id="choose-photo-button">Choose Photo</button>
+        <input type="file" id="choose-photo" accept="image/*" style="display: none;">
+        <div class="image-container" style="display: none;">
+            <img id="original-image" src="" alt="Image">
+            <img id="preview-image" src="" alt="Preview">
+        </div>
+        <div class="resize-options">
+            <label for="width">Width:</label>
+            <input type="number" id="width" placeholder="Width">
+            <label for="height">Height:</label>
+            <input type="number" id="height" placeholder="Height">
+            <button id="preview-button">Preview</button>
+        </div>
+        <a id="download-button" download="resized_image.jpg" style="display: none;">Download</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
